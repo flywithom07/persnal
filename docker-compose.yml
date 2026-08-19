@@ -1,0 +1,9 @@
+services:
+  neural-nexus:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      NEURAL_NEXUS_REPOSITORY: /workspace
+    volumes:
+      - .:/workspace
